@@ -29,18 +29,15 @@ body{
   padding:3vh 4vw 6vh 4vw;
 }
 .imgContainer{
-  display:grid;
-  grid-template-columns: auto auto auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   text-align: center;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .imgContainer--box {
-  display:grid;
-  grid-template-rows: auto auto;
-  text-align: center;
-  justify-content: center;
-  max-width: 200px;
-  margin: 0 2vw 0 2vw
+  display:flex;
+  flex-direction: column;
 
 }
 .buttonTop{
@@ -49,10 +46,10 @@ body{
   right:10px;
   background-color: #3b5998;
   color: white;
-  padding:1vw;
   opacity:0.5;
-  border-radius: 50px;
+  border-radius: 100px;
   transition: opacity 0.3s;
+  font-size: 0.8em;
 }
 .buttonTop:hover{
   opacity:1;
